@@ -27,7 +27,7 @@ export function BottomNav() {
                 'flex flex-col items-center justify-center gap-1 text-sm font-medium transition-colors',
                 isActive ? 'text-primary' : 'text-muted-foreground hover:text-primary'
               )}
-            >
+              legacyBehavior>
               <item.icon className="h-5 w-5" />
               <span>{item.label}</span>
             </Link>

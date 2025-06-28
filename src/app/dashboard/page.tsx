@@ -34,10 +34,9 @@ export default function DashboardPage() {
           Bienvenido a Actas Móvil. Seleccione una opción para comenzar.
         </p>
       </div>
-
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {cardData.map((card) => (
-          <Link href={card.href} key={card.title} className="group">
+          <Link href={card.href} key={card.title} className="group" legacyBehavior>
             <Card className="h-full transition-all duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-1 bg-card/80 backdrop-blur-sm border-primary/20">
               <CardHeader>
                 <div className="flex items-center gap-4">
